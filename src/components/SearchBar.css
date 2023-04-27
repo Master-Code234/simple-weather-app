@@ -1,0 +1,21 @@
+.search-bar {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-inputs input {
+  background-color: aliceblue;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 80vw;
+  height: 5%;
+  border: none;
+  border-radius: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+

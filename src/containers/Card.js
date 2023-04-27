@@ -1,8 +1,8 @@
 import WeatherBar from "../components/WeatherBar";
 import getWeatherData from "../services/weatherMap-api";
-import Header from "../components/Header";
+import WeatherInfo from "../components/WeatherInfo";
 import React, { useState, useEffect } from "react";
-import Location from "../components/Location";
+
 
 export default function Card() {
   const [weatherData, setWeatherData] = useState(null);
@@ -22,9 +22,10 @@ export default function Card() {
 
   return (
     <div className="weather-details">
-      <Location location={weatherData.name} />
 
-      <Header
+      
+
+      <WeatherInfo
         location={weatherData.name}
         temp={weatherData.main.temp}
         icon={weatherData.weather[0].icon}
