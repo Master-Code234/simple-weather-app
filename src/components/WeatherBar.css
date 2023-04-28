@@ -1,0 +1,14 @@
+.weather-info {
+    display: flex;
+    text-align: center;
+    width: 45rem;
+    margin: 1rem auto;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    padding: 1rem;
+    justify-content: space-evenly;
+    background-color: rgb(132, 138, 138);
+    color: aliceblue;
+    border: none;
+  }
+  

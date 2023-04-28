@@ -5,9 +5,8 @@ body {
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+ display: flex;
+ flex-direction: column;
   background: linear-gradient(
     55deg,
     rgb(60, 164, 199),
@@ -17,55 +16,22 @@ body {
   width: 100vw;
 }
 
-.weather-details {
-  display: flex;
-  margin: auto;
-  width: 50vw;
-  height: 70vh;
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 2rem;
-}
-
-.weather {
-  flex-basis: 50%;
-  margin-left: 2rem;
-}
 
 
 
-.weather-info {
-  flex-basis: 50%;
-  border-radius: 1rem;
-  width: auto;
-  font-size: 0.8rem;
-  padding: 1rem;
-  justify-content: space-evenly;
-  background-color: rgb(132, 138, 138);
-  color: aliceblue;
-}
 
 
 
-.weather-stats {
-  font-weight: bold;
-}
-
-.current-conditions {
-  text-align: center;
-}
 
 
 
-.user-input {
-  display: flex;
-  text-align: center;
-  margin: auto;
-  justify-content: center;
-  width: 80vw;
-  padding: 2rem;
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 4rem;
-}
+
+
+
+
+
+
+
 
 
 

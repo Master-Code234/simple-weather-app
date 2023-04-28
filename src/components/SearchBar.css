@@ -2,6 +2,7 @@
   margin-top: 2%;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .search-inputs input {
@@ -11,11 +12,26 @@
   width: 80vw;
   height: 5%;
   border: none;
-  border-radius: 1rem;
+  
 }
 
 input:focus {
   outline: none;
+}
+
+.search-btn {
+ border: none;
+ background-color: hsl(0, 0%, 0%);
+ color: aliceblue;
+ border-radius: 0.3rem;
+ padding: 0.3rem;
+ cursor: pointer;
+ width: 4rem;
+ height: 2.4rem;
+}
+
+.search-btn:hover {
+  opacity: 90%;
 }
 
 

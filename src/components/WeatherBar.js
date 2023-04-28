@@ -1,14 +1,16 @@
 import React from "react";
+import "./WeatherBar.css"
 
-export default function WeatherBar({ temp, humidity, wind, visibility }) {
+export default function WeatherBar({  high,low, humidity, wind, visibility,pressure }) {
   return (
     <div className="weather-info">
-      <div className="current-conditions">
-        <h1>Current Conditions </h1>
+      <div className="pressure">
+        high
+        <h2>{Math.round(high)}°</h2>
       </div>
-      <div className="weather-temp">
-        Current temp:
-        <h2> {Math.round(temp)}°F </h2>
+      <div className="low">
+        low
+        <h2> {Math.round(low)}° </h2>
       </div>
       <div className="humidity">
         Humidity:
@@ -20,7 +22,7 @@ export default function WeatherBar({ temp, humidity, wind, visibility }) {
       </div>
       <div className="visibility">
         Visibility
-        <h2> {visibility}</h2>
+        <h2> {Math.round(visibility /1609)} miles</h2>
       </div>
     </div>
   );
