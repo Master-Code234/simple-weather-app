@@ -2,23 +2,30 @@ import { useState } from "react";
 import "./SearchBar.css";
 import SearchIcon from "@mui/icons-material/Search";
 
-export default function SearchBar() {
-  const [input, setInput] = useState("");
-  
+export default function SearchBar(props) {
+  const [searchInput, setSearchInput] = useState({ searchTerm: "" });
 
-    const handleSubmit = (event) => {
-      event.preventDefault();
-     
-    };
+  const handleChange = (event) => {
+    setSearchInput({ ...searchInput,  searchTerm: event.target.value });
+  };
 
-    console.log(input)
-  
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    props.getWeather(searchInput.searchTerm);
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      handleSubmit(event);
+      setSearchInput(searchInput);
+    }
+  };
 
   return (
     <div className="search-bar">
       <div className="search-btn-wrap">
         <form onSubmit={handleSubmit}>
-          <button className="search-btn">
+          <button type="submit" className="search-btn">
             <SearchIcon />
           </button>
         </form>
@@ -26,12 +33,12 @@ export default function SearchBar() {
       <div className="search-inputs">
         <input
           type="text"
-          placeholder="Enter a city"
-          onChange={(event) => event.target.value}
+          name="searchTerm"
+          placeholder="Enter a location"
+          onChange={handleChange}
+          onKeyDown={handleKeyPress}
         />
       </div>
     </div>
   );
 }
-
-

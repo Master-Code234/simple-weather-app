@@ -1,11 +1,12 @@
 // pass city as a parameter
 const getWeatherData = async (city) => {
 
-  if(!city) {
-   city = "dallas"
+  if (!city) {
+    city = "dallas"
   }
-  
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=ennice&units=imperial&appid=${process.env.REACT_APP_APIKEY}`;
+
+ 
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${process.env.REACT_APP_APIKEY}`;
 
   try {
     const response = await fetch(url);
@@ -16,3 +17,5 @@ const getWeatherData = async (city) => {
   }
 };
 export default getWeatherData;
+
+

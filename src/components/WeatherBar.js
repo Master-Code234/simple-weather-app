@@ -1,4 +1,3 @@
-import React from "react";
 import "./WeatherBar.css"
 
 export default function WeatherBar({  high,low, humidity, wind, visibility,pressure }) {
@@ -23,6 +22,10 @@ export default function WeatherBar({  high,low, humidity, wind, visibility,press
       <div className="visibility">
         Visibility
         <h2> {Math.round(visibility /1609)} miles</h2>
+      </div>
+      <div className="pressure">
+        Pressure 
+        <h2>{pressure}</h2>
       </div>
     </div>
   );

@@ -1,22 +1,21 @@
-import './App.css';
-import SearchBar from './components/SearchBar';
+
+
+import "./App.css";
+import SearchBar from "./components/SearchBar";
 import WeatherBar from "./components/WeatherBar";
 import getWeatherData from "./services/weatherMap-api";
 import WeatherInfo from "./components/WeatherInfo";
-import React, { useState, useEffect } from "react";
-
+import { useState, useEffect } from "react";
 
 export default function App() {
-
-
-
-
   const [weatherData, setWeatherData] = useState(null);
 
-  const getWeather = async () => {
-    const data = await getWeatherData();
+  const getWeather = async (city) => {
+    const data = await getWeatherData(city);
     setWeatherData(data);
   };
+
+ 
 
   useEffect(() => {
     getWeather();
@@ -26,13 +25,9 @@ export default function App() {
     return <div>Loading Weather...</div>;
   }
 
-  
-
   return (
     <div className="App">
-      <SearchBar 
-      data={weatherData}
-      />
+      <SearchBar getWeather={getWeather} />
 
       <WeatherInfo
         location={weatherData.name}
@@ -44,7 +39,7 @@ export default function App() {
         min={weatherData.main.temp_min}
         humidity={weatherData.main.humidity}
       />
- 
+
       <WeatherBar
         high={weatherData.main.temp_max}
         low={weatherData.main.temp_min}
@@ -56,4 +51,3 @@ export default function App() {
     </div>
   );
 }
-

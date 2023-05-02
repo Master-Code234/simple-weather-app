@@ -1,12 +1,15 @@
 .weather {
   display: flex;
+  font-family: cursive;
   flex-direction: column;
   margin: auto;
   padding: 4rem;
-  width: 40rem;
+  min-width: 60vw;
+  max-width: 300vw;
+  height: 45vh;
   border: none;
   border-radius: 1em;
-  background-color: aliceblue;
+  background-color: #ffffff;
 }
 
 .weather-image {
@@ -14,6 +17,12 @@
     font-size: 2rem;
     text-align: center;
 }
+
+.date {
+  text-align: left;
+  
+}
+
 
 
 

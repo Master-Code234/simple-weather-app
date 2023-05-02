@@ -1,6 +1,4 @@
-import React from "react";
 import "./WeatherInfo.css";
-import WeatherBar from "./WeatherBar";
 
 
 export default function WeatherInfo({
@@ -9,14 +7,26 @@ export default function WeatherInfo({
   conditions,
   feels,
   location,
-  humidity,
  country
+
+
+
 }) {
+ let today = new Date()
+ const daysOfWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+ let currentDay = today.getDay()
+ const currentDate = daysOfWeek[currentDay]
+
+ 
   return (
     <div className="weather">
-      <div className="location">
-        <h1>{location} ,{country} </h1>
+      <div className="date">
+        {`${currentDate}`}
       </div>
+      <div className="location">
+        <h1>{location} ,{country}</h1>
+      </div>
+      
       <div className="weather-image">
         <img
           className="weather-icon"
@@ -25,12 +35,16 @@ export default function WeatherInfo({
           width={90}
           height={90}
         />
-        <h1>{Math.round(temp)}°F</h1>
+        <h1>{Math.round(temp)} °F</h1>
       </div>
-      <div className="temp"></div>
       <div className="conditions">
         <h3>{conditions}</h3>
       </div>
+      <div className="feels">
+        feels like {Math.round(feels)}°
+        
+      </div>
+
     </div>
   );
 }
