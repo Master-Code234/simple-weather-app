@@ -8,6 +8,10 @@ Check out the live site here:
 https://master-codes-weather-app.onrender.com/
 
 
+
+
+
+
 Technologies Used:
 
 .  React JS
@@ -16,7 +20,12 @@ Technologies Used:
 
 .  CSS FlexBox
 
-.  OpenWeatherMap API
+.  OpenWeatherMap API (current weather data API)
+
+
+
+
+
 
 
 Installation instructions:
@@ -46,6 +55,17 @@ Installation instructions:
 12. in the services folder on line 9 put your api key here
 
 13. const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${YOUR API KEY HERE}`;
+
+
+
+
+Unsolved problems:
+
+ . The website crashes when unexpected input such as numbers are typed into the searchbar
+ 
+ . The website is not responsive to all screen sizes
+ 
+ 
 
 
 
