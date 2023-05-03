@@ -10,11 +10,12 @@ body {
   background: linear-gradient(
     55deg,
     rgb(60, 164, 199),
-    rgba(15, 133, 129, 0.488)
+    #ffffff
   );
   height: 100vh;
   width: 100vw;
 }
+
 
 
 

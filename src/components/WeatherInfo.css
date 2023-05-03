@@ -1,6 +1,5 @@
 .weather {
   display: flex;
-  font-family: cursive;
   flex-direction: column;
   margin: auto;
   padding: 4rem;
@@ -9,7 +8,8 @@
   height: 45vh;
   border: none;
   border-radius: 1em;
-  background-color: #ffffff;
+  background-color: #363f44;
+  color: #fff;
 }
 
 .weather-image {

@@ -17,7 +17,7 @@ export default function WeatherInfo({
  let currentDay = today.getDay()
  const currentDate = daysOfWeek[currentDay]
 
- 
+
   return (
     <div className="weather">
       <div className="date">
