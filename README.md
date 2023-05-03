@@ -19,6 +19,38 @@ Technologies Used:
 .  OpenWeatherMap API
 
 
+Installation instructions:
+
+1. create a new folder any place on your computer
+
+2. open up git bash
+
+3. cd into the folder
+
+4. in git bash type code .
+
+5. go to the green code button on my github 
+
+6. click the https tab and copy the url
+
+7. in git bash type git clone + the url from my github 
+
+8. in git bash cd into simple-weather-app folder
+
+9. in git bash type npm i
+
+10. go to https://openweathermap.org/price and sign up for a free api key
+
+11. in the simple-weather-app folder go to the services folder
+
+12. in the services folder on line 9 put your api key here
+
+13. const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${YOUR API KEY HERE}`;
+
+
+
+
+
 
 
 
