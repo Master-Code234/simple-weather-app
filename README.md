@@ -2,6 +2,7 @@
 
 In this project, I developed a weather app using React JS that provides users with current weather information. My approach to creating this project was to first plan out my website by creating a blueprint of how I wanted the final UI and site to look. I did this using the draw.io website. Creating a blueprint helped me to visualize the basic structure that I wanted and what the site might look like when it's finished. Then I broke my website down into 3 components: searchBar, weather-info, and weatherBar. Each one of the components has a specific task. In order to make my code more manageable I decided to create separate CSS files for each component and use multiple divs with descriptive naming conventions so that I could easily tell what each divs purpose was on the website.
 
+![image](https://github.com/Master-Code234/simple-weather-app/assets/126014289/a23b4ba3-c1e8-4c93-8b28-86388a83f134)
 
 
 ## Live site 
